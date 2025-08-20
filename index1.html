@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Website</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(90deg, #1a0033, #330066);
+      box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+    }
+    .navbar-brand {
+      font-size: 28px;
+      font-weight: bold;
+      color: #ff4d6d !important;
+    }
+    .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .nav-link:hover {
+      color: #ff4d6d !important;
+      text-shadow: 0px 0px 8px #ff4d6d;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("https://i.ibb.co/9nTrH3n/avengers.jpg") no-repeat center center/cover;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 60px;
+      font-weight: bold;
+      color: #ff4d6d;
+      text-shadow: 2px 2px 10px black;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+    }
+    .btn-glow {
+      background: linear-gradient(45deg, #ff1e56, #ff4d6d);
+      border: none;
+      padding: 12px 25px;
+      font-size: 18px;
+      border-radius: 30px;
+      color: white;
+      box-shadow: 0px 0px 15px rgba(255, 77, 109, 0.7);
+      transition: 0.3s;
+    }
+    .btn-glow:hover {
+      box-shadow: 0px 0px 25px rgba(255, 77, 109, 1);
+      transform: scale(1.05);
+    }
+
+    /* Movie Section */
+    .movie-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .movie-card img {
+      border-radius: 15px;
+    }
+    .movie-card:hover {
+      transform: scale(1.07);
+      box-shadow: 0px 10px 20px rgba(255, 77, 109, 0.6);
+    }
+    .movie-card h5 {
+      margin-top: 10px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(90deg, #1a0033, #330066);
+      padding: 20px;
+      text-align: center;
+      margin-top: 30px;
+      color: #f5f5f5;
+    }
+    footer p {
+      margin: 0;
+    }
+    footer span {
+      color: #ff4d6d;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">🎥 MyMovies</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Categories</a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-white" href="#">Action</a></li>
+              <li><a class="dropdown-item text-white" href="#">Comedy</a></li>
+              <li><a class="dropdown-item text-white" href="#">Drama</a></li>
+              <li><a class="dropdown-item text-white" href="#">Horror</a></li>
+              <li><a class="dropdown-item text-white" href="#">Romance</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Top Rated</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search movies...">
+          <button class="btn btn-glow" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero d-flex align-items-center">
+    <div class="container">
+      <h1>Avengers: Endgame</h1>
+      <p>The Avengers assemble once more to reverse Thanos' actions and restore balance to the universe.</p>
+      <button class="btn btn-glow">Watch Now</button>
+    </div>
+  </div>
+
+  <!-- Movie Section -->
+  <div class="container my-5">
+    <h2 class="mb-4 text-center">🔥 Trending Movies</h2>
+    <div class="row g-4">
+      <div class="col-md-3 movie-card">
+        <img src="https://i.ibb.co/9t8s7cX/spiderman.jpg" class="img-fluid" alt="Spiderman">
+        <h5>Spiderman: No Way Home</h5>
+      </div>
+      <div class="col-md-3 movie-card">
+        <img src="https://i.ibb.co/1QqqyXq/batman.jpg" class="img-fluid" alt="Batman">
+        <h5>The Batman</h5>
+      </div>
+      <div class="col-md-3 movie-card">
+        <img src="https://i.ibb.co/8NXX0f0/joker.jpg" class="img-fluid" alt="Joker">
+        <h5>Joker</h5>
+      </div>
+      <div class="col-md-3 movie-card">
+        <img src="https://i.ibb.co/TtD0Jvr/interstellar.jpg" class="img-fluid" alt="Interstellar">
+        <h5>Interstellar</h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 <span>MyMovies</span>. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

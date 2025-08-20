@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Website</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0b0b0b;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+    }
+     .movie-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .movie-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 193, 7, 0.4);
+  }
+  .movie-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .movie-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.5);
+  }
+</style>
+
+    
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+   <section bg-dark>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand text-warning fw-bold" href="#">🎬 MyMovies</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index2.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="movies.html">Movies</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Genres</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Comedy</a></li>
+              <li><a class="dropdown-item" href="#">Drama</a></li>
+              <li><a class="dropdown-item" href="#">Horror</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="toprated.html">Top Rated</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 bg-dark text-light border-0" type="search" placeholder="Search">
+          <button class="btn btn-outline-warning" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</section>
+<section class="py-4">
+  <div class="container-fluid">
+    <div class="row g-4">
+      <!-- Left Side (9 columns) -->
+      <div class="col-md-9">
+        <section class="container my-5">
+  <div class="row align-items-center g-4">
+    
+    <!-- Text Section -->
+    <div class="col-md-6">
+      <h5 class="fw-bold text-warning mb-3">
+      Discover the latest blockbusters, timeless classics, and hidden gems all in one place. 
+        Stream your favorite movies in high quality, explore by genre, and stay updated with the top-rated picks of the week.
+      </h5>
+      <p class="text-light lead">
+        Temporibus, architecto sunt eveniet mollitia distinctio earum numquam recusandae alias hic, similique porro soluta, in praesentium cumque eaque modi quo molestias sint.
+      </p>
+      <button class="btn btn-warning fw-semibold px-4 rounded-pill shadow">
+        🎬 Watch Now
+      </button>
+    </div>
+
+    <!-- Image Section -->
+    <div class="col-md-6 text-center">
+      <img src="images/welcomenewyork.jpg" class="img-fluid rounded shadow-lg movie-img" alt="Main Movie">
+    </div>
+
+  </div>
+</section>
+
+
+
+        <!-- Nested row for 3 images -->
+        <div class="row g-3">
+          <div class="col-md-4">
+            <img src="images/bolbachan.jpg" class="img-fluid rounded shadow movie-img" alt="Movie 1">
+          </div>
+          <div class="col-md-4">
+            <img src="images/herapheri.jpg" class="img-fluid rounded shadow movie-img" alt="Movie 2">
+          </div>
+          <div class="col-md-4">
+            <img src="images/highjack.jpg" class="img-fluid rounded shadow movie-img" alt="Movie 3">
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side (3 columns) -->
+      <div class="col-md-3">
+        <div class="p-4 bg-dark text-warning rounded shadow">
+  <h6 class="fw-bold">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore nisi illum perferendis libero dignissimos incidunt esse odio mollitia qui. Repudiandae, reprehenderit repellat numquam enim distinctio id quos modi vero unde.
+  </h6>
+</div>
+
+        <img src="images/mix.jpg" class="img-fluid rounded shadow movie-img mb-5" alt="Side Movie" >
+
+        <p class="fw-bold mb-5">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nisi illum perferendis libero dignissimos incidunt esse odio mollitia qui. Repudiandae, reprehenderit repellat numquam enim distinctio id quos modi vero unde.
+</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+
+  
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
